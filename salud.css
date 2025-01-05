@@ -1,0 +1,161 @@
+/* Estilo base */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima de toda la pantalla */
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInHeader 1.5s ease-in-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+}
+
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Contenedor principal */
+main {
+  padding: 20px;
+  width: 90%;
+  margin-top: 40px;
+  
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff 0%, #e6f7ff 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  flex: 1; /* Expande para ocupar el espacio disponible */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezados */
+h1 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+h2 {
+  color: #218838;
+}
+
+/* Estilo de las listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background-color: #e6f7ff;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #d0f0ff;
+}
+
+/* Estilo de los checkboxes */
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Botones */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #4CAF50 0%, #80e8af 100%);
+  color: white;
+  border: none;
+  width: 80%;
+  max-width: 400px; /* Limitamos el ancho máximo si es necesario */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Centrando el botón horizontal y verticalmente */
+  display: block;
+  margin: 0 auto;
+}
+
+
+button:hover {
+  background: linear-gradient(135deg, #80e8af 0%, #4CAF50 100%);
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: rgba(44, 62, 80, 0.9);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+}

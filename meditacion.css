@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#meditacion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#timer-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#timer-circle {
+    font-size: 4em;
+    border: 5px solid #00796b;
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: 10px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#progress-bar {
+    width: 200px;
+    height: 10px;
+    background-color: #e0e0e0;
+    margin: 10px 0;
+}
+
+#progress-bar div {
+    height: 100%;
+    background-color: #00796b;
+    width: 0;
+}
+
+#controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f54;
+}
+
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f54;
+}
+
+
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

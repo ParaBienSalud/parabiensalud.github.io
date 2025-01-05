@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditación</title>
+    <link rel="stylesheet" href="meditacion.css">
+</head>
+<body>
+
+    <header>
+        <h1>ParaBienSalud</h1>
+        <p>Tu guía para un estilo de vida saludable</p>
+    </header>
+
+    <div id="meditacion-container">
+        <h1>Meditación Guiada</h1>
+
+        <div id="timer-container">
+            <div id="timer-circle">0</div>
+            <div id="progress-bar"></div>
+            <div id="controls">
+                <select id="exercise-selector">
+                    <option value="breathing">Respiración</option>
+                    <option value="focus">Concentración</option>
+                    <option value="relaxation">Relajación</option>
+                </select>
+                <button id="start-btn">Iniciar</button>
+                <button id="pause-btn">Pausar</button>
+            </div>
+        </div>
+
+        <div id="instructions">
+            <p id="current-exercise">Comencemos con nuestra sesión...</p>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="location.href='index.html'">Volver al Inicio</button>
+    </div>
+
+    <footer>
+        <p>© 2025 ParaBienSalud</p>
+    </footer>
+
+    <script src="meditacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParaBienSalud - Ejercicios</title>
+  <link rel="stylesheet" href="ejercicios.css">
+</head>
+<body>
+  <header>
+    <h1>ParaBienSalud</h1>
+    <p>Tu guía para un estilo de vida saludable</p>
+  </header>
+  
+  <main>
+    <h2>Retos de Ejercicio</h2>
+    <div class="exercise-challenges">
+      <!-- Reto Corto -->
+      <div class="challenge-card">
+        <h3>Reto Corto</h3>
+        <p>Dificultad: Básica</p>
+        <ul class="short-tasks">
+          <li><label><input type="checkbox" class="short-task" disabled> 5 flexiones</label></li>
+          <li><label><input type="checkbox" class="short-task" disabled> 10 sentadillas</label></li>
+          <li><label><input type="checkbox" class="short-task" disabled> 20 segundos de plancha</label></li>
+        </ul>
+        <button id="shortChallengeBtn">Iniciar Reto</button>
+        <button id="shortCompleteBtn" class="complete-btn" disabled>Completar Reto</button>
+      </div>
+
+      <!-- Reto Largo -->
+      <div class="challenge-card">
+        <h3>Reto Largo</h3>
+        <p>Dificultad: Alta</p>
+        <ul class="long-tasks">
+          <li><label><input type="checkbox" class="long-task" disabled> 30 flexiones</label></li>
+          <li><label><input type="checkbox" class="long-task" disabled> 50 sentadillas</label></li>
+          <li><label><input type="checkbox" class="long-task" disabled> 3 minutos de plancha</label></li>
+          <li><label><input type="checkbox" class="long-task" disabled> 2 km de carrera</label></li>
+        </ul>
+        <button id="longChallengeBtn">Iniciar Reto</button>
+        <button id="longCompleteBtn" class="complete-btn" disabled>Completar Reto</button>
+      </div>
+    </div>
+
+    <!-- Estadísticas y Personalización -->
+    <div class="stats-personalization">
+      <h3>Tu Progreso</h3>
+      <p>Porcentaje completado: 0%</p>
+      <p>Último reto completado: Ninguno</p>
+      <button id="viewHistoryBtn">Ver Historial</button>
+    </div>
+
+    <div class="button-container">
+      <button onclick="location.href='index.html'">Volver al Inicio</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 ParaBienSalud. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="ejercicios.js"></script>
+</body>
+</html>
